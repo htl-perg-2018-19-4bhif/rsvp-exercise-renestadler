@@ -1,0 +1,220 @@
+{
+    "filename": "./data.json",
+    "collections": [
+        {
+            "name": "party",
+            "data": [
+                {
+                    "motto": "Graduation Party",
+                    "location": "HTL-Perg",
+                    "date": "10.12.2018",
+                    "time": "21:30",
+                    "meta": {
+                        "revision": 0,
+                        "created": 1543667985741,
+                        "version": 0
+                    },
+                    "$loki": 1
+                },
+                {
+                    "motto": "Graduation Party",
+                    "location": "HTL-Perg",
+                    "date": "10.12.2018",
+                    "time": "21:30",
+                    "meta": {
+                        "revision": 0,
+                        "created": 1543667985895,
+                        "version": 0
+                    },
+                    "$loki": 2
+                },
+                {
+                    "motto": "Graduation Party",
+                    "location": "HTL-Perg",
+                    "date": "10.12.2018",
+                    "time": "21:30",
+                    "meta": {
+                        "revision": 0,
+                        "created": 1543667986105,
+                        "version": 0
+                    },
+                    "$loki": 3
+                },
+                {
+                    "motto": "Graduation Party",
+                    "location": "HTL-Perg",
+                    "date": "10.12.2018",
+                    "time": "21:30",
+                    "meta": {
+                        "revision": 0,
+                        "created": 1543667986527,
+                        "version": 0
+                    },
+                    "$loki": 4
+                }
+            ],
+            "idIndex": [
+                1,
+                2,
+                3,
+                4
+            ],
+            "binaryIndices": {},
+            "constraints": null,
+            "uniqueNames": [],
+            "transforms": {},
+            "objType": "party",
+            "dirty": false,
+            "cachedIndex": null,
+            "cachedBinaryIndex": null,
+            "cachedData": null,
+            "adaptiveBinaryIndices": true,
+            "transactional": false,
+            "cloneObjects": false,
+            "cloneMethod": "parse-stringify",
+            "asyncListeners": false,
+            "disableMeta": false,
+            "disableChangesApi": true,
+            "disableDeltaChangesApi": true,
+            "autoupdate": false,
+            "serializableIndices": true,
+            "ttl": null,
+            "maxId": 4,
+            "DynamicViews": [],
+            "events": {
+                "insert": [],
+                "update": [],
+                "pre-insert": [],
+                "pre-update": [],
+                "close": [],
+                "flushbuffer": [],
+                "error": [],
+                "delete": [
+                    null
+                ],
+                "warning": [
+                    null
+                ]
+            },
+            "changes": []
+        },
+        {
+            "name": "guest",
+            "data": [
+                {
+                    "firstName": "René",
+                    "lastName": "Stadler",
+                    "partyIds": [
+                        1,
+                        2,
+                        3
+                    ],
+                    "meta": {
+                        "revision": 0,
+                        "created": 1543667988610,
+                        "version": 0
+                    },
+                    "$loki": 1
+                },
+                {
+                    "firstName": "René",
+                    "lastName": "Stadler",
+                    "partyIds": [
+                        1,
+                        2,
+                        3
+                    ],
+                    "meta": {
+                        "revision": 0,
+                        "created": 1543667989198,
+                        "version": 0
+                    },
+                    "$loki": 2
+                },
+                {
+                    "firstName": "René",
+                    "lastName": "Stadler",
+                    "partyIds": [
+                        1,
+                        2,
+                        3
+                    ],
+                    "meta": {
+                        "revision": 0,
+                        "created": 1543667989604,
+                        "version": 0
+                    },
+                    "$loki": 3
+                }
+            ],
+            "idIndex": [
+                1,
+                2,
+                3
+            ],
+            "binaryIndices": {},
+            "constraints": null,
+            "uniqueNames": [],
+            "transforms": {},
+            "objType": "guest",
+            "dirty": false,
+            "cachedIndex": null,
+            "cachedBinaryIndex": null,
+            "cachedData": null,
+            "adaptiveBinaryIndices": true,
+            "transactional": false,
+            "cloneObjects": false,
+            "cloneMethod": "parse-stringify",
+            "asyncListeners": false,
+            "disableMeta": false,
+            "disableChangesApi": true,
+            "disableDeltaChangesApi": true,
+            "autoupdate": false,
+            "serializableIndices": true,
+            "ttl": null,
+            "maxId": 3,
+            "DynamicViews": [],
+            "events": {
+                "insert": [],
+                "update": [],
+                "pre-insert": [],
+                "pre-update": [],
+                "close": [],
+                "flushbuffer": [],
+                "error": [],
+                "delete": [
+                    null
+                ],
+                "warning": [
+                    null
+                ]
+            },
+            "changes": []
+        }
+    ],
+    "databaseVersion": 1.5,
+    "engineVersion": 1.5,
+    "autosave": true,
+    "autosaveInterval": 5000,
+    "autosaveHandle": null,
+    "throttledSaves": true,
+    "options": {
+        "autosave": true,
+        "serializationMethod": "normal",
+        "destructureDelimiter": "$<\n"
+    },
+    "persistenceMethod": "fs",
+    "persistenceAdapter": null,
+    "verbose": false,
+    "events": {
+        "init": [
+            null
+        ],
+        "loaded": [],
+        "flushChanges": [],
+        "close": [],
+        "changes": [],
+        "warning": []
+    },
+    "ENV": "NODEJS"
+}

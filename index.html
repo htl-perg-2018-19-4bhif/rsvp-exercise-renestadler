@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Guest registration service
+    </title>
+</head>
+
+<body>
+    <h1>Guest registration</h1>
+    <script type="text/javascript">
+        function validateForm() {
+            var x = document.forms["myForm"]["firstname"].value;
+            if (x == "5") {
+                alert("Name must be filled out");
+                return false;
+            }
+            const url = 'http://localhost:8080/register';
+            fetch(url, {
+                method: 'post',
+                headers: {
+                    "Content-type": "application/json"
+                },
+                body: '{ "firstName": "' + document.forms["myForm"]["firstname"].value + '", "lastName": "' + document.forms["myForm"]["lastname"].value + '", "partyIds": [' + document.forms["myForm"]["partyId"].value + '] }'
+            })
+                .then(function (resp) {
+                    if (resp.status === 201) {
+                        resp.json().then(function (data) {
+                            console.log(data);
+                        });
+                    } else {
+                        resp.text().then(function (data) {
+                           alert(data);
+                        });
+                    }
+                })
+                .catch(function (error) {
+                    alert(error);
+                });
+        }
+    </script>
+    </head>
+    <form name="myForm">
+        <p>
+            <h3>First name:</h3>
+            <input type="text" name="firstname" required placeholder="Firstname" />
+        </p>
+        <p>
+            <h3>Last name:</h3>
+            <input type="text" name="lastname" required placeholder="Lastname" />
+        </p>
+        <p>
+            <h3>Party id:</h3>
+            <input type="number" min="1" name="partyId" required placeholder="Party ID" />
+            <!--At this input field you can only add a guest to one party - A rest call with multiple parties is besides from that possible too-->
+        </p>
+        <p><br>
+            <input type="button" name="procced" value="Add Guest" onclick="return validateForm()"></p>
+    </form>
+</body>
+
+</html>

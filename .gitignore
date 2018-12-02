@@ -1,4 +1,3 @@
 app.js
-package-lock.json
 node_modules
-db.dat
+data.db

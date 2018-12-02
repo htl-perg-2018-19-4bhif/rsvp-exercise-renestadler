@@ -6,9 +6,10 @@
   "scripts": {
     "start": "ts-node app.ts"
   },
-  "author": "Rainer Stropek",
+  "author": "René Stadler",
   "license": "MIT",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.16.4",
     "express-basic-auth": "^1.1.6",
     "http-status-codes": "^1.3.0",
